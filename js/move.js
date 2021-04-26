@@ -4,13 +4,11 @@ let divY;
 let drawActive = false;
 let insertX;
 let insertY;
-let activeDiv;
 let move;
 divs.forEach(div => {
     div.addEventListener('mousedown', function(e) {
         this.style.backgroundColor = 'grey';
-        activeDiv = this.getAttribute('data-id')
-        move = document.querySelector(`[data-id='${activeDiv}'] `)
+        move = document.querySelector(`[data-id='${this.getAttribute('data-id')}'] `)
         drawActive = !drawActive;
         insertX = e.offsetX;
         insertY = e.offsetY;
