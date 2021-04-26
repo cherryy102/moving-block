@@ -1,1 +1,1 @@
-# Moving block. click and hold to move
+# Moving block. Click and hold to move
